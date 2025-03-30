@@ -1,0 +1,105 @@
+
+:root{
+
+ --main-font: 'Outfit' ;
+
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("./Outfit-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: var(--main-font);
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.eid {
+    background: #14213D;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+.animation {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap ;
+    top: 0px;
+    left: -100%;
+    left: -100%;
+    font-size: 1em;
+    font-weight: bold;
+    animation: scrollText 6s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.intro {
+    position: relative;
+    top: 10px;
+
+    font-size: 17px;
+    background-color: aqua;
+    padding: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    text-align: left;
+    box-shadow: 2px 2px ;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+button {
+    background: #e1136e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e1136e;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+   
+
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
